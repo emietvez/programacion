@@ -5,13 +5,10 @@ arreglo resultante. Por ej.
 => [3, 4, 0, 3, 12, 2]
 [2, 9, 0, 5, 22, 14]
 [-1, 5, 0, 2, 10, 12] */
-
-let arrayOne: number[] = [3, 4, 0, 3, 12, 2];
-let arrayTwo: number[] = [-1, 5, 0, 2, 10, 12];
-let fusionArray: number[] = [];
-
-for (let i = 0 ; i < arrayOne.length; i++){
-    fusionArray.push(arrayOne[i] + arrayTwo[i])
+var arrayOne = [3, 4, 0, 3, 12, 2];
+var arrayTwo = [-1, 5, 0, 2, 10, 12];
+var fusionArray = [];
+for (var i = 0; i < arrayOne.length; i++) {
+    fusionArray.push(arrayOne[i] + arrayTwo[i]);
 }
-
-console.log("Array fusion => " + fusionArray)
+console.log("Array fusion => " + fusionArray);
