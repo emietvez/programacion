@@ -6,20 +6,16 @@ arreglo también mostrar “Hay un cero”, pero una sola vez. Por ej.
 “Hay un cero”
 => [4, -4, 10, 23, 3, 4, 12, ​50​]
 50   */
-
-let listNumbers: number[] = [4, -4, 10, 23, 3, 4, 12, ​50​];
-let numMay: number = 0;
-let message: string = '';
-
-
-for (let listNumber of listNumbers) {
+var listNumbers = [4, -4, 10, 23, 3, 4, 12, 50];
+var numMay = 0;
+var message = '';
+for (var _i = 0, listNumbers_1 = listNumbers; _i < listNumbers_1.length; _i++) {
+    var listNumber = listNumbers_1[_i];
     if (listNumber > numMay) {
-        numMay = listNumber
+        numMay = listNumber;
     }
-
-    if(listNumber == 0){
+    if (listNumber == 0) {
         message = "Hay un cero";
     }
-
 }
 console.log(numMay + ' ' + message);
